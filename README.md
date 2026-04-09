@@ -1,17 +1,58 @@
-# todoliste
+# Todo Liste - Galaxy Elegance
 
-A new Flutter project.
+Application mobile de gestion de tâches développée avec Flutter, alliant un design féminin inspiré de la galaxie à une expérience utilisateur fluide et professionnelle.
 
-## Getting Started
+## Fonctionnalités
 
-This project is a starting point for a Flutter application.
+- Ajout de nouvelles tâches avec champ texte
+- Suppression d'une tâche par glissement (swipe) ou bouton dédié
+- Marquage d'une tâche comme terminée via case à cocher
+- Sauvegarde locale des données avec SharedPreferences
+- Compteur dynamique des tâches restantes
+- Interface Material Design 3 personnalisée
+- Thème galaxy : dégradés violets, roses et bleus nuit avec étoiles subtiles
+- Iconographie professionnelle Material Icons (pas d'émojis)
 
-A few resources to get you started if this is your first Flutter project:
+## Aperçu technique
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- State Management : Provider
+- Stockage local : SharedPreferences
+- Interface : Material 3 avec personnalisation avancée
+- Typographie : Poppins / Montserrat
+- Architecture : modulaire (séparation modèle, vue, état)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Structure du projet
+
+lib/
+├── main.dart # Point d'entrée et configuration du thème
+├── models/
+│ └── todo_model.dart # Modèle de données d'une tâche
+├── providers/
+│ └── todo_provider.dart # Gestion d'état et logique métier
+└── screens/
+└── home_screen.dart # Interface principale
+
+
+## Prérequis
+
+- Flutter SDK (version 3.0 ou supérieure)
+- Dart (version 2.18 ou supérieure)
+- Android Studio / VS Code avec extensions Flutter
+
+## Personnalisation du thème
+
+Le thème galaxy est configurable dans `main.dart` via l'objet `ThemeData` :
+- Dégradé d'arrière-plan personnalisé
+- Couleurs primaires et secondaires (violets, roses, bleus nuit)
+- Styles de texte raffinés
+- Icônes Material Design en variante outlined
+
+## Contribution
+
+Les contributions sont les bienvenues. Merci de respecter les conventions de code Flutter et l'intégrité du design galaxy.
+
+
+---
+
+
+Developpe avec Flutter et dedie aux utilisateurs recherchant une application de todo liste a la fois elegante, fonctionnelle et visuellement inspirante.
